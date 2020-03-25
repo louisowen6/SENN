@@ -1,0 +1,26 @@
+# SentiWordNet v3.0.0 (1 June 2010)
+# Andrea Esuli
+#
+# SentiWordNet is distributed under the Attribution-ShareAlike 4.0 Unported (CC BY-SA 4.0) license.
+# http://creativecommons.org/licenses/by-sa/4.0/
+#
+# For any information about SentiWordNet:
+# Web: http://sentiwordnet.isti.cnr.it
+# -------
+#
+# Data format.
+#
+# SentiWordNet v3.0 is based on WordNet version 3.0.
+# WordNet website: http://wordnet.princeton.edu/
+#
+# The pair (POS,ID) uniquely identifies a WordNet (3.0) synset.
+# The values PosScore and NegScore are the positivity and negativity
+# score assigned by SentiWordNet to the synset.
+# The objectivity score can be calculated as:
+# ObjScore = 1 - (PosScore + NegScore)
+# SynsetTerms column reports the terms, with sense number, belonging
+# to the synset (separated by spaces).
+#
+# -------
+#
+Column: POS	ID	PosScore	NegScore	SynsetTerms	Gloss
