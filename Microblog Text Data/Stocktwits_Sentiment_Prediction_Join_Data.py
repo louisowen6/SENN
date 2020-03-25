@@ -1,4 +1,7 @@
 from __future__ import print_function
+
+PATH_ROOT='C:/Users/Louis Owen/Desktop/ICoDSA 2020/SENN/'
+
 print('==================== Importing Packages ====================')
 
 import warnings
@@ -34,26 +37,26 @@ from tensorflow.keras import regularizers
 print("==================== Importing Supporting Files ====================")
 
 #Sentiment Training Data
-df_train_sentiment = pd.read_csv('C:/Users/Louis Owen/Desktop/ICoDSA 2020/SENN/Supporting_Files/df_train_final.csv')
+df_train_sentiment = pd.read_csv(PATH_ROOT+'Supporting_Files/df_train_final.csv')
 df_train_sentiment=df_train_sentiment.drop(columns=['Unnamed: 0','index','W2V_50_Means','GloVe40_Means','NER_DATE','NER_DURATION','NER_LOCATION','NER_MONEY''NER_NUMBER','NER_ORDINAL','NER_ORGANIZATION','NER_PERCENT','NER_PERSON','NER_SET','NER_TIME','created_at','official_account','sentiment','total_likes'])
 
 #Google Word2Vec Pretrained Model 
-model_w2v = gensim.models.KeyedVectors.load_word2vec_format('C:/Users/Louis Owen/Desktop/ICoDSA 2020/SENN/Supporting_Files/GoogleNews-vectors-negative300.bin', binary=True) 
+model_w2v = gensim.models.KeyedVectors.load_word2vec_format(PATH_ROOT+'Supporting_Files/GoogleNews-vectors-negative300.bin', binary=True) 
 
 #------------------------------------------------------------------------------------------
 print("==================== Importing Data ====================")
 
-df_stocktwits = pd.read_csv('C:/Users/Louis Owen/Desktop/ICoDSA 2020/SENN/Dataset/Final/df_stocktwits_prepared_final.csv')
-df_yfinance = pd.read_csv('C:/Users/Louis Owen/Desktop/ICoDSA 2020/SENN/Dataset/Final/df_yfinance_BA_prepared.csv')
+df_stocktwits = pd.read_csv(PATH_ROOT+'Dataset/Final/df_stocktwits_prepared_final.csv')
+df_yfinance = pd.read_csv(PATH_ROOT+'Dataset/Final/df_yfinance_BA_prepared.csv')
 
 #------------------------------------------------------------------------------------------
 print("==================== Importing Trained Model ====================")
 
-model_MLP = load_model('C:/Users/Louis Owen/Desktop/ICoDSA 2020/SENN/Supporting_Files/model_MLP.h5')  
-model_MLP_W2V_Sentence_Vector = load_model('C:/Users/Louis Owen/Desktop/ICoDSA 2020/SENN/Supporting_Files/model_MLP_W2V_Sentence_Vector.h5')
-model_CNN_W2V = load_model('C:/Users/Louis Owen/Desktop/ICoDSA 2020/SENN/Supporting_Files/model_CNN_W2V.h5')
-model_LSTM_W2V = load_model('C:/Users/Louis Owen/Desktop/ICoDSA 2020/SENN/Supporting_Files/model_LSTM_W2V.h5')
-model_sentiment_ensemble = load_model('C:/Users/Louis Owen/Desktop/ICoDSA 2020/SENN/Supporting_Files/model_Ensemble.h5')
+model_MLP = load_model(PATH_ROOT+'Supporting_Files/model_MLP.h5')  
+model_MLP_W2V_Sentence_Vector = load_model(PATH_ROOT+'Supporting_Files/model_MLP_W2V_Sentence_Vector.h5')
+model_CNN_W2V = load_model(PATH_ROOT+'Supporting_Files/model_CNN_W2V.h5')
+model_LSTM_W2V = load_model(PATH_ROOT+'Supporting_Files/model_LSTM_W2V.h5')
+model_sentiment_ensemble = load_model(PATH_ROOT+'Supporting_Files/model_Ensemble.h5')
 
 #------------------------------------------------------------------------------------------
 

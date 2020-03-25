@@ -44,13 +44,13 @@ from sklearn.preprocessing import StandardScaler,MinMaxScaler
 print("==================== Importing Supporting Files ====================")
 
 #RF N-Grams Dictionary
-rf_1_gram_df = pd.read_csv(PATH_ROOT+'Dataset/'+'rf_1_gram_df.csv', engine='python',index_col='Unnamed: 0') 
-rf_2_gram_df = pd.read_csv(PATH_ROOT+'Dataset/'+'rf_2_gram_df.csv', engine='python',index_col='Unnamed: 0')
-rf_3_gram_df = pd.read_csv(PATH_ROOT+'Dataset/'+'rf_3_gram_df.csv', engine='python',index_col='Unnamed: 0') 
-rf_4_gram_df = pd.read_csv(PATH_ROOT+'Dataset/'+'rf_4_gram_df.csv', engine='python',index_col='Unnamed: 0')
+rf_1_gram_df = pd.read_csv(PATH_ROOT+'Supporting_Files/'+'rf_1_gram_df.csv', engine='python',index_col='Unnamed: 0') 
+rf_2_gram_df = pd.read_csv(PATH_ROOT+'Supporting_Files/'+'rf_2_gram_df.csv', engine='python',index_col='Unnamed: 0')
+rf_3_gram_df = pd.read_csv(PATH_ROOT+'Supporting_Files/'+'rf_3_gram_df.csv', engine='python',index_col='Unnamed: 0') 
+rf_4_gram_df = pd.read_csv(PATH_ROOT+'Supporting_Files/'+'rf_4_gram_df.csv', engine='python',index_col='Unnamed: 0')
 
 #PMI Dictionary 
-PMI_df = pd.read_csv(PATH_ROOT+'Dataset/'+'PMI_df.csv', engine='python',index_col='Unnamed: 0')
+PMI_df = pd.read_csv(PATH_ROOT+'Supporting_Files/'+'PMI_df.csv', engine='python',index_col='Unnamed: 0')
 
 #Abbreviation & Slang Dict
 abb_df = pd.read_table(PATH_ROOT+'Supporting_Files/'+'emnlp_dict.txt', sep='\s+', names=('Abbreviation', 'Normal'))
