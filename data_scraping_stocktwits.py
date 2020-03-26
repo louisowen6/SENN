@@ -63,7 +63,7 @@ def stocktwits_scrap(n,ticker,base=149407261):
 		return None,last_id
 
 
-def main()
+def main():
 	args = parser.parse_args()
 	is_concat = args.concat_df
 	PATH = args.path
