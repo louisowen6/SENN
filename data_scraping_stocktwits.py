@@ -12,7 +12,10 @@ parser.add_argument('--scrape_iter',
 parser.add_argument('--concat_df',
 	required=True,
 	choices=['Y', 'N'],
-	help='Scrape Iteration')
+	help='Use this script to concat all of the extracted datasets or to extract StockTwits data part by part')
+parser.add_argument('--path',
+	required=True,
+	help="Path to SENN folder")
 
 
 def stocktwits_scrap(n,ticker,base=149407261):
@@ -63,6 +66,7 @@ def stocktwits_scrap(n,ticker,base=149407261):
 def main()
 	args = parser.parse_args()
 	is_concat = args.concat_df
+	PATH = args.path
 
 	if is_concat:
 		source='C:/Users/Louis Owen/Desktop/ICoDSA 2020/SENN/Dataset/stocktwits BA scraping/'
@@ -74,7 +78,7 @@ def main()
 			toy=pd.read_csv(source+filename)
 			df_stocktwits=pd.concat([df_stocktwits,toy])
 
-		df_stocktwits.to_csv('C:/Users/Louis Owen/Desktop/ICoDSA 2020/SENN/Dataset/df_stocktwits_full_BA.csv',index=False)
+		df_stocktwits.to_csv(PATH+'/Dataset/df_stocktwits_full_BA.csv',index=False)
 	else:
 		scrape_iter = args.scrape_iter
 
@@ -85,7 +89,7 @@ def main()
 
 		df_stocktwits,last_id=stocktwits_scrap(n=1000,ticker='BA',base=base)
 
-		df_stocktwits.to_csv('C:/Users/Louis Owen/Desktop/ICoDSA 2020/SENN/Dataset/stocktwits BA scraping/df_stocktwits_'+str(scrape_iter)+'.csv',index=False)
+		df_stocktwits.to_csv(PATH+'/Dataset/stocktwits BA scraping/df_stocktwits_'+str(scrape_iter)+'.csv',index=False)
 
 
 if __name__ == '__main__':

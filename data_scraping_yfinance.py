@@ -6,7 +6,9 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--ticker_name',
 	required=True,
 	help='Ticker name')
-
+parser.add_argument('--path',
+	required=True,
+	help="Path to SENN folder")
 
 def yfinance_scrap(start,end,ticker):
 	return yf.download(ticker, start=start, end=end,interval = "1h")
@@ -15,6 +17,7 @@ def yfinance_scrap(start,end,ticker):
 def main():
 	args = parser.parse_args()
 	ticker = args.ticker_name
+	PATH = args.path
 
 	df_yfinance=yfinance_scrap(start='2019-01-01',end='2020-01-01',ticker=ticker)
 	df_yfinance=df_yfinance[df_yfinance.index!='2018-12-31']
@@ -47,7 +50,7 @@ def main():
 	index_iter=pd.Series(df_yfinance.index.astype(str))
 	df_yfinance['time']=index_iter.apply(lambda x: time_count(x)).tolist()
 
-	df_yfinance.to_csv('C:/Users/Louis Owen/Desktop/ICoDSA 2020/SENN/Dataset/df_yfinance_full_'+ticker+'.csv')
+	df_yfinance.to_csv(PATH+'/SENN/Dataset/df_yfinance_full_'+ticker+'.csv')
 
 
 if __name__ == '__main__':
