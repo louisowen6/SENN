@@ -1,7 +1,5 @@
 Code implementation of the sentiment score extraction models can be found in [another repository](https://github.com/louisowen6/NLP_Stacking_Ensemble)
 
-The trained models are also saved in this repository under the [/Supporting_Files](https://github.com/louisowen6/SENN/tree/master/Supporting_Files) folder.
-
 -----------------------------------------------------------------------------------------------------------------------------------
 
 First, it is needed to clean the raw text data and then generate useful features which will be exploited to the model ([Stocktwits_Data_Preparation.py](https://github.com/louisowen6/SENN/blob/master/Microblog_Text_Data/Stocktwits_Data_Preparation.py)). Then, the missing value, constant, and correlated feature analysis have to be done ([Microblog_Text_Data/Stocktwits_Data_Cleaning.ipynb](https://github.com/louisowen6/SENN/blob/master/Microblog_Text_Data/Stocktwits_Data_Cleaning.ipynb)). Finally, the prepared data is exploited as the input to the trained ensemble-model and then the extracted sentiment score is appended to the historical stock data ([Stocktwits_Sentiment_Prediction_Join_Data.py](https://github.com/louisowen6/SENN/blob/master/Microblog_Text_Data/Stocktwits_Sentiment_Prediction_Join_Data.py)).
