@@ -46,9 +46,14 @@ optional arguments:
 
 # Historical Stock Data Preparation
 
-Please refer to [README](https://github.com/louisowen6/SENN/tree/master/Historical_Stock_Data) inside /Historical_Stock_Data folder
+Please refer to [README](https://github.com/louisowen6/SENN/tree/master/Historical_Stock_Data) inside the /Historical_Stock_Data folder
 
 
 # Sentiment Score Extraction
 
-Please refer to [README](https://github.com/louisowen6/SENN/tree/master/Microblog_Text_Data) inside /Microblog_Text_Data folder
+Please refer to [README](https://github.com/louisowen6/SENN/tree/master/Microblog_Text_Data) inside the /Microblog_Text_Data folder
+
+
+# Stock Price Prediction
+
+Please refere to [README](https://github.com/louisowen6/SENN/tree/master/Prediction) inside the /Prediction folder
