@@ -9,7 +9,7 @@ Stock market prediction is one of the most appealing and challenging problems in
 
 # Requirements
 
-yfinance, tensorflow, standfordnlp, bs4, contractions, inflect, nltk, textblob, string, dtaidistance, stockstats, pandas, numpy, gensim, sklearn, datetime, matplotlib, seaborn
+yfinance==0.1.54, tensorflow==1.15.2, standfordnlp, bs4, contractions, inflect, nltk, textblob, string, dtaidistance, stockstats, pandas, numpy, gensim, sklearn, datetime, matplotlib, seaborn
 
 
 # Data Scraping
