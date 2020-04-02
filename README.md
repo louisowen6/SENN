@@ -1,20 +1,21 @@
-```bash
-                       Code implementation of SENN: Stock Ensemble-based Neural Network
-```
+# SENN
 
-# Abstract
+This repository provides code implementation of the submitted paper "SENN: Stock Ensemble-based Neural Network for Stock Market Prediction using Historical Stock Data and Sentiment Analysis"
+
+
+## Abstract
 `
 Stock market prediction is one of the most appealing and challenging problems in the realm of data science. In this paper, authors investigate the potential of exploiting sentiment score extracted from microblog text data along with historical stock data to improve the stock market prediction performance. The sentiment score is extracted by using an ensemble-based model which utilize the power of Long Short-Term Memory (LSTM) and Multi-Layer Perceptron (MLP) along with Convolutional Neural Network (CNN). We propose a robust Stock Ensemble-based Neural Network (SENN) model which is trained on the Boeing historical stock data and sentiment score extracted from StockTwits microblog text data in 2019. Furthermore, we also propose a novel way to measure the stock market prediction model performance which extent the classic Mean Absolute Percentage Error (MAPE) metric, namely Adjusted MAPE (AMAPE). It has been observed from the experiments that utilizing SENN to integrate sentiment score as additional features could improve the stock market prediction performance up to 25% and also decreasing the margin of error up to 48%. With the training data limitation, the proposed model achieves a superior performance of 0.89% AMAPE. Our codes are available at https://www.github.com/louisowen6/SENN.
 `
 
-# Requirements
+## Requirements
 
 yfinance==0.1.54, tensorflow==1.15.2, standfordnlp, bs4, contractions, inflect, nltk, textblob, string, dtaidistance, stockstats, pandas, numpy, gensim, sklearn, datetime, matplotlib, seaborn
 
 
-# Data Scraping
+## Data Scraping
 
-## Historical Stock Data
+### Historical Stock Data
 
 Simply use [data_scraping_yfinance.py](https://github.com/louisowen6/SENN/blob/master/data_scraping_yfinance.py) to gather the historical stock data.
 
@@ -28,7 +29,7 @@ optional arguments:
   --path                Path to SENN folder
 ```
 
-## StockTwits Microblog Text Data
+### StockTwits Microblog Text Data
 
 In order to gather StockTwits data, one needs to have the [StockTwits API account](https://api.stocktwits.com/developers/docs). Then, use [data_scraping_stocktwits.py](https://github.com/louisowen6/SENN/blob/master/data_scraping_stocktwits.py) to scrape the data.
 
@@ -44,16 +45,20 @@ optional arguments:
 ```
 
 
-# Historical Stock Data Preparation
+## Historical Stock Data Preparation
 
 Please refer to [README](https://github.com/louisowen6/SENN/tree/master/Historical_Stock_Data) inside the /Historical_Stock_Data folder
 
 
-# Sentiment Score Extraction
+## Sentiment Score Extraction
 
 Please refer to [README](https://github.com/louisowen6/SENN/tree/master/Microblog_Text_Data) inside the /Microblog_Text_Data folder
 
 
-# Stock Price Prediction
+## Stock Price Prediction
 
 Please refere to [README](https://github.com/louisowen6/SENN/tree/master/Prediction) inside the /Prediction folder
+
+## License
+
+The underlying code of this project is licensed under the [MIT license](https://github.com/louisowen6/SENN/blob/master/LICENSE).
