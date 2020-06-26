@@ -1,7 +1,8 @@
 # SENN
 
-This repository provides code implementation of the submitted paper "SENN: Stock Ensemble-based Neural Network for Stock Market Prediction using Historical Stock Data and Sentiment Analysis"
+This repository provides code implementation of the accepted paper on The International Conference on Data Science and Its Applications (ICoDSA) 2020, entitled "SENN: Stock Ensemble-based Neural Network for Stock Market Prediction using Historical Stock Data and Sentiment Analysis"
 
+![SENN Architecture](https://github.com/louisowen6/SENN/blob/master/SENN_Architecture.png)
 
 ## Abstract
 `
