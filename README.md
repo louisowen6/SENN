@@ -58,7 +58,24 @@ Please refer to [README](https://github.com/louisowen6/SENN/tree/master/Microblo
 
 ## Stock Price Prediction
 
-Please refere to [README](https://github.com/louisowen6/SENN/tree/master/Prediction) inside the /Prediction folder
+Please refer to [README](https://github.com/louisowen6/SENN/tree/master/Prediction) inside the /Prediction folder
+
+## Citation
+
+If you find the paper and the code helpful, please cite us.
+
+```
+@INPROCEEDINGS{Owen2008:SENN,
+AUTHOR="Louis Owen and Finny Oktariani",
+TITLE="{SENN:} Stock Ensemble-based Neural Network for Stock Market Prediction
+using Historical Stock Data and Sentiment Analysis",
+BOOKTITLE="2020 International Conference on Data Science and Its Applications (ICoDSA)
+(ICoDSA 2020)",
+DAYS=4,
+MONTH=aug,
+YEAR=2020
+}
+```
 
 ## License
 
