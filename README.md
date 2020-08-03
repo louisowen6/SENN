@@ -80,3 +80,6 @@ YEAR=2020
 ## License
 
 The underlying code of this project is licensed under the [MIT license](https://github.com/louisowen6/SENN/blob/master/LICENSE).
+
+------------------------------------------------------------------------------------------------------------------
+You can download the PPT presented in the conference [here](https://github.com/louisowen6/SENN/blob/master/SENN_PPT.pptx) and the video presentation [here](https://drive.google.com/file/d/1gYJ519EEwMjU0ukpLYuTrGsgJIR31pN_/view?usp=sharing)
