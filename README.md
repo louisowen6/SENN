@@ -4,6 +4,10 @@ This repository provides code implementation of the accepted paper on The Intern
 
 ![SENN Architecture](https://github.com/louisowen6/SENN/blob/master/SENN_Architecture.png)
 
+
+You can see the recorded presentation [here](https://drive.google.com/file/d/1gYJ519EEwMjU0ukpLYuTrGsgJIR31pN_/view?usp=sharing) and download the PPT [here](https://github.com/louisowen6/SENN/blob/master/SENN_PPT.pptx) 
+
+
 ## Abstract
 `
 Stock market prediction is one of the most appealing and challenging problems in the realm of data science. In this paper, authors investigate the potential of exploiting sentiment score extracted from microblog text data along with historical stock data to improve the stock market prediction performance. The sentiment score is extracted by using an ensemble-based model which utilize the power of Long Short-Term Memory (LSTM) and Multi-Layer Perceptron (MLP) along with Convolutional Neural Network (CNN). We propose Stock Ensemble-based Neural Network (SENN) model which is trained on the Boeing historical stock data and sentiment score extracted from StockTwits microblog text data in 2019. Furthermore, we also propose a novel way to measure the stock market prediction model performance which is the modification of the classic Mean Absolute Percentage Error (MAPE) metric, namely Adjusted MAPE (AMAPE). It has been observed from the experiments that utilizing SENN to integrate sentiment score as additional features could improve the stock market prediction performance up to 25% and also decreasing the margin of error up to 48%. With the training data limitation, the proposed model achieves a superior performance of 0.89% AMAPE. Our codes are available at https://www.github.com/louisowen6/SENN.
