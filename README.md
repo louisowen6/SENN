@@ -5,7 +5,7 @@ This repository provides code implementation of the accepted paper on The Intern
 ![SENN Architecture](https://github.com/louisowen6/SENN/blob/master/SENN_Architecture.png)
 
 
-You can see the recorded presentation [here](https://drive.google.com/file/d/1gYJ519EEwMjU0ukpLYuTrGsgJIR31pN_/view?usp=sharing) and download the PPT [here](https://github.com/louisowen6/SENN/blob/master/SENN_PPT.pptx) 
+You can see the recorded presentation [here](https://drive.google.com/file/d/1gYJ519EEwMjU0ukpLYuTrGsgJIR31pN_/view?usp=sharing) and download the PPT [here](https://github.com/louisowen6/SENN/raw/master/SENN_PPT.pptx) 
 
 
 ## Abstract
