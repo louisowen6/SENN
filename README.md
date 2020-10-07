@@ -69,16 +69,14 @@ Please refer to [README](https://github.com/louisowen6/SENN/tree/master/Predicti
 If you find the paper and the code helpful, please cite us.
 
 ```
-@INPROCEEDINGS{Owen,
-AUTHOR={Owen, L. and Oktariani, F.},
-TITLE={SENN: Stock Ensemble-based Neural Network for Stock Market Prediction
-using Historical Stock Data and Sentiment Analysis},
-BOOKTITLE={2020 International Conference on Data Science and Its Applications (ICoDSA)
-(ICoDSA 2020)},
-DAYS=5-6,
-MONTH=aug,
-YEAR=2020
-}
+@INPROCEEDINGS{9212982,
+  author={L. {Owen} and F. {Oktariani}},
+  booktitle={2020 International Conference on Data Science and Its Applications (ICoDSA)}, 
+  title={SENN: Stock Ensemble-based Neural Network for Stock Market Prediction using Historical Stock Data and Sentiment Analysis}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={1-7},}
 ```
 
 ## License
